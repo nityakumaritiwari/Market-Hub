@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=League+Gothic&display=swap');
+*
+{
+    margin:0;
+    padding: 0;
+}
+.navbar
+{
+    display:flex;
+}
+.nav-list{
+      width:50%;
+    /*  background-color: black;*/
+
+}
+.logo
+{
+    width:20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img
+{
+    width: 40%;
+   border-style: solid;
+    border-radius: 75px;
+}
+.nav-list
+{
+    width:70%;
+    /*background-color: black;*/
+    display:flex;
+    align-items: center;
+}
+.nav-list li{
+       list-style: none;
+       padding: 26px 33px;
+}
+.nav-list li a{
+   text-decoration: none;
+   color:black;
+}
+.sectiontag
+{
+    font-family:  'League Gothic', sans-serif;
+    font-size: 35px;
+    padding-left: 8px;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+  color:greenyellow;
+ }
+.rightNav{
+ /*  background-color: black;*/
+    width:30%;
+    text-align: right;
+}
+#seach{
+    padding: 30px;
+    font-size:30px;
+    border:2px;
+    border-radius: 9px;
+}
+.pic
+{
+   
+    border: solid;
+    border-radius: 13px;
+    border-block-width: 9px;
+    border-radius: 19px;
+
+    
+}
+.background
+{
+    background: rgba(0,0,0,0.7) url(back.png);
+    background-size: cover;
+}
+.firstSection
+{
+    height: 100vh;
+}
+.box-main
+{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    margin: auto;
+    max-width: 30%;
+    height:80%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif'
+    
+    
+}
+
+.firsthalf{
+    width:80%;
+    display:flex;
+    justify-content:left;
+    color:black;
+ 
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+    
+}
+.secondhalf
+{
+    width:30%;
+}
+.secondhalf img{
+    border-radius: 50px;
+}
+.text1
+{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    
+}
+.secright
+{
+  
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    padding: 15px;
+}
+.Kidswear{
+    font-family: 'Abril Fatface', cursive;
+      font-size: 40px;
+}
+.sec1
+{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    color: black;
+}
+.Menwear
+{
+     
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+}
+.secleft
+{
+    height:600px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    flex-direction: row-reverse;
+}
+.contact
+{
+    height:80vh;
+    
+   margin:auto;
+    padding: 50px;
+    font-size: larger;
+    max-width: 344px;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+}
+ .btn-dark
+{
+    padding: 10px;
+    border-radius: 9px;
+    color: black;
+}
+.form-input{
+    margin: 14px 0;
+    padding: 2px;
+    width:82%;
+    font-size: 29px;
+    border-color: black;
+    border-radius: 9px;
+}
+.text-center
+{
+    font-size: medium;
+    
+    text-align: center;
+    background-color: dimgray;
+    height:30px;
+}
+.line
+{
+    width:33px;
+    background-color:white;
+    height:6px;
+    margin:5px 3px;
+}
+.Burger
+{
+    display: none;
+    position:absolute;
+    cursor:pointer;
+    right:5%;
+    top:5px;
+}
+@media only screen and (max-width:974px)
+{
+    .nav-list
+    {
+        flex-direction: column;
+    }
+    .navbar
+    {
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+height: 442px;
+    }
+    .rightNav
+    {
+        text-align: center;
+    }
+    #search
+    {
+        width:100%;
+    }
+    .Burger
+    {
+        display: block;
+        right:20px;
+    }
+    .h-nav
+    {
+        height:72px;
+    }
+    .v-class
+    {
+        opacity:0;
+    }
+    .box-main
+    {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .secleft{
+        flex-direction: column-reverse;
+    }
+    .secright
+    {
+        flex-direction: column-reverse;
+    }
+    .sectiontag
+    {
+        font-size: 25px;
+        width: 100%;
+    }
+    .sec1{
+        font-size:30px;
+    }
+    .form-input {
+        margin: 14px 0;
+        padding: 1px;
+        width: 62%;
+        font-size: 19px;
+        border-color: black;
+        border-radius: 9px;}
+}
